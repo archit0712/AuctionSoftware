@@ -15,12 +15,14 @@
     height: 41px;
     border-right:1px solid #E4E4E4;
     padding: 0 28px;
+    width: auto;
 }
 
 .img {
     object-fit: inherit;
     height: 41px;
-    width:87px;
+    width:auto;
+
 }
 
 .text{

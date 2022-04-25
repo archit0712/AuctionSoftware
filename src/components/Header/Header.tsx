@@ -6,10 +6,10 @@ const Header = () => {
   return (
     <div className={styles.body}>
       <div className={styles.logo}>
-        <img className={styles.img} src="./images/logo.png" alt="logo" />
+        <img className={styles.img} src="../images/logo.png" alt="logo" />
       </div>
       <div className={styles.text}>
-        <Link to="/" className="styles.link">
+        <Link to="/home" className="styles.link">
           Player List
         </Link>
       </div>

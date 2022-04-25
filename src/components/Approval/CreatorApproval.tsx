@@ -104,7 +104,7 @@ const Approval = () => {
   return (
     <div className={styles.main}>
       <div className="">
-        <h3 >Player Details</h3>
+        <h3>Player Details</h3>
       </div>
 
       <div className={styles.section}>
@@ -127,10 +127,10 @@ const Approval = () => {
           <h4>Name</h4> <p>{userData?.name}</p>
         </div>
         <div className={styles.j}>
-          <h4>Enrollment Number</h4> <p>{userData?.enrollment}</p>
+          <h4>course</h4> <p>{userData?.course}</p>
         </div>
         <div className={styles.j}>
-          <h4>Email address</h4> <p>{userData?.email}</p>
+          <h4>Year</h4> <p>{userData?.year}</p>
         </div>
         <div className={styles.j}>
           <h4>Score Out of 10</h4> <p>{userData?.score}</p>
@@ -138,7 +138,6 @@ const Approval = () => {
         <div className={styles.j}>
           <h4>Sports Played</h4> <p>{userData?.sportsPlayed}</p>
         </div>
-   
 
         <div className={styles.j}>
           <button onClick={handleFiftyIncremental}>50</button>
@@ -148,18 +147,19 @@ const Approval = () => {
           <button onClick={handleRefresh}>Reset</button>
         </div>
       </div>
-      
+
       <div className={styles.section}>
         <div className={styles.j}>
           <h4>Comments</h4>
           <input
-            type= "text" id='email' className='form__input'
+            type="text"
+            id="email"
+            className="form__input"
             required
             onChange={(e: React.ChangeEvent<any>) => {
               setComment(e.target.value);
             }}
           ></input>
-          
         </div>
         {userData?.houseName === "" && (
           <div className={styles.j}>

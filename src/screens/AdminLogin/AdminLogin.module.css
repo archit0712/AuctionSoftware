@@ -21,7 +21,7 @@
 #img{
     align-self:flex-start;
     justify-self:flex-start;
-    width: clamp(170px,18.66vw + 0.01em,280px);
+    width: auto;
     height:clamp(75px,8.73vw + 0.01em,131px);
     margin-bottom:45px;
     padding-left:7px;
