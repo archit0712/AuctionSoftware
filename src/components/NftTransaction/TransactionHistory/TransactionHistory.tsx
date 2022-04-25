@@ -101,33 +101,11 @@ const TransactionHistory = () => {
     run();
   }, []);
   return (
-    <div className={styles.main}>
-      <h2 className={styles.h2}>Player List</h2>
-      <table className={styles.table}>
-        <tr className={styles.head}>
-          <th className={styles.heading}>Player Id</th>
-          <th className={styles.heading}>Name</th>
-          <th className={styles.heading}>Email</th>
-          <th className={styles.heading}>Enrollment</th>
-          <th className={styles.heading}>Profile Link</th>
-        </tr>
-        {player?.map((e: any, index: number) => (
-          <tr className={styles.body} key={index}>
-            <td className={styles.items}> {e.playerID}</td>
-            <td className={styles.items}> {e.name}</td>
-            <td className={styles.items}> {e.email}</td>
-            <td className={styles.items}> {e.enrollment}</td>
-            <td className={styles.items}>
-              <Link to={`/player/${e.playerID}`} className={styles.link}>
-                View
-              </Link>
-            </td>
-          </tr>
-        ))}
-      </table>
-      {/* <button type="submit" className={styles.btn}>
-        <p className={styles.p}>Load More</p>
-      </button> */}
+    <div >
+      
+      <h2>                                                            Player List</h2>
+      
+      
     </div>
   );
 };

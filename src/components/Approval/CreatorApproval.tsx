@@ -103,8 +103,8 @@ const Approval = () => {
 
   return (
     <div className={styles.main}>
-      <div className="ml-min">
-        <h3>Player Details</h3>
+      <div className="">
+        <h3 >Player Details</h3>
       </div>
 
       <div className={styles.section}>
@@ -138,15 +138,7 @@ const Approval = () => {
         <div className={styles.j}>
           <h4>Sports Played</h4> <p>{userData?.sportsPlayed}</p>
         </div>
-        {/* <div className={styles.j}>
-          <h4>Youtube Link</h4> <p>{userData?.socials?.youtubeProfileUrl}</p>
-        </div>
-        <div className={styles.j}>
-          <h4>Personal Wbsite</h4> <p>{userData?.socials?.portfolioUrl}</p>
-        </div>
-        <div className={styles.j}>
-          <h4>Date of Joining</h4> <p>{userData?.dateOfJoining}</p>
-        </div> */}
+   
 
         <div className={styles.j}>
           <button onClick={handleFiftyIncremental}>50</button>
@@ -156,40 +148,18 @@ const Approval = () => {
           <button onClick={handleRefresh}>Reset</button>
         </div>
       </div>
-      {/* <div className={styles.section}>
-        <h3>Bank Details</h3>
-        <div className={styles.j}>
-          <h4>Account Holder Name</h4>{" "}
-          <p>{userData?.bankAccountDetails?.accountHolderName}</p>
-        </div>
-        <div className={styles.j}>
-          <h4>Account no.</h4>{" "}
-          <p>{userData?.bankAccountDetails?.accountNumber}</p>
-        </div>
-        <div className={styles.j}>
-          <h4>IFSC code</h4> <p>{userData?.bankAccountDetails?.ifscCode}</p>
-        </div>
-        <div className={styles.j}>
-          <h4>Account Type</h4>{" "}
-          <p>{userData?.bankAccountDetails?.accountType}</p>
-        </div>
-        <div className={styles.j}>
-          <h4>Mobile No.</h4>{" "}
-          <p>{userData?.bankAccountDetails?.accountHolderPhoneNumber}</p>
-        </div>
-      </div> */}
+      
       <div className={styles.section}>
         <div className={styles.j}>
-          <h4>Comments</h4>{" "}
+          <h4>Comments</h4>
           <input
-            className={styles.j}
-            name="comment"
-            placeholder="comments"
+            type= "text" id='email' className='form__input'
             required
             onChange={(e: React.ChangeEvent<any>) => {
               setComment(e.target.value);
             }}
-          ></input>{" "}
+          ></input>
+          
         </div>
         {userData?.houseName === "" && (
           <div className={styles.j}>
