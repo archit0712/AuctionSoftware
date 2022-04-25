@@ -106,12 +106,11 @@ const Approval = () => {
       <div className="">
         <h3>Player Details</h3>
       </div>
-
       <div className={styles.section}>
         <div className={styles.j}>
-          <h6>Bid Placed</h6>{" "}
-          {userData?.bidPoints !== 0 && <h6>Sold To {userData?.houseName}</h6>}
-          {userData?.bidPoints === 0 && <h6> {bid}</h6>}
+          <h2>Bid Placed</h2>{" "}
+          {userData?.bidPoints !== 0 && <h2>Sold To {userData?.houseName}</h2>}
+          {userData?.bidPoints === 0 && <h2> {bid}</h2>}
         </div>
         <div className={styles.j}>
           <h4>Photo</h4>{" "}
@@ -119,7 +118,7 @@ const Approval = () => {
             src={
               `../playerPhoto/${playerId}.jfif` || `../playerPhoto/download.png`
             }
-            alt="pht"
+            alt="no photo found"
             width={250}
           />
         </div>
