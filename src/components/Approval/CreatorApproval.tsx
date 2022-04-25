@@ -19,14 +19,12 @@ const Approval = () => {
   };
 
   const handleHundredIncremental = () => {
-    setBid(bid + 100);
+    setBid(bid + 150);
   };
   const handleTwoHunderdIncremental = () => {
-    setBid(bid + 200);
+    setBid(bid + 300);
   };
-  const handleFiveHundredIncremental = () => {
-    setBid(bid + 500);
-  };
+
   const handleRefresh = () => {
     setBid(0);
   };
@@ -116,7 +114,7 @@ const Approval = () => {
           <h4>Photo</h4>{" "}
           <img
             src={
-              `../playerPhoto/${playerId}.jfif` || `../playerPhoto/download.png`
+              `../playerPhotos/${playerId}.jpg` || `../playerPhoto/download.png`
             }
             alt="no photo found"
             width={250}
@@ -140,9 +138,8 @@ const Approval = () => {
 
         <div className={styles.j}>
           <button onClick={handleFiftyIncremental}>50</button>
-          <button onClick={handleHundredIncremental}>100</button>
-          <button onClick={handleTwoHunderdIncremental}>200</button>
-          <button onClick={handleFiveHundredIncremental}>500</button>
+          <button onClick={handleHundredIncremental}>150</button>
+          <button onClick={handleTwoHunderdIncremental}>300</button>
           <button onClick={handleRefresh}>Reset</button>
         </div>
       </div>
